@@ -1,0 +1,32 @@
+.form {
+  margin-top: 4rem;
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.form-label {
+  display: block;
+  width: 15rem;
+  font-weight: bold;
+}
+
+.form-input {
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 0.1rem solid #8189a9;
+}
+
+.form-togglePassword {
+  position: absolute;
+  top: 3rem;
+  right: 3.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

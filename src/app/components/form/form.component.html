@@ -1,0 +1,33 @@
+<form (ngSubmit)="submitForm()" class="form">
+  <div class="form-group">
+    <label for="email" class="form-label">Email address:</label>
+    <input
+      type="text"
+      class="form-input"
+      [(ngModel)]="email"
+      placeholder="email"
+      name="email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="pwd" class="form-label">Password:</label>
+    <input
+      [type]="shouldShowPassword ? 'text' : 'password'"
+      class="form-input"
+      [(ngModel)]="password"
+      id="pwd"
+      placeholder="password"
+      name="password"
+    />
+    <span
+      *ngIf="password && password.length > 0"
+      (click)="togglePassword()"
+      class="form-togglePassword"
+      >Show password</span
+    >
+  </div>
+
+  <button type="submit" class="button">
+    {{ isNewUser ? "Sign up" : "Login" }}
+  </button>
+</form>

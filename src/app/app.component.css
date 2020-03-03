@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  background-color: #000;
+}
+.header-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 6rem);
+}
+
+.form-wrapper {
+  width: 40rem;
+}
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
