@@ -35,7 +35,6 @@ export class AuthService implements OnInit {
     this.angularFireAuth.auth
       .signInWithEmailAndPassword(email, password)
       .then(res => {
-        this.getLoggedInUser(res.user.email);
         this.router.navigate(["/home"], {
           queryParams: { email: res.user.email }
         });
@@ -43,14 +42,6 @@ export class AuthService implements OnInit {
       .catch(err => {
         alert("You are not registered in the app. Please sign up.");
       });
-  }
-
-  getLoggedInUser(userEmail: string) {
-    return userEmail;
-  }
-
-  getNewUser(newUserEmail: string) {
-    return newUserEmail;
   }
 
   signOut() {
